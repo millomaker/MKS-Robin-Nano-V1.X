@@ -241,13 +241,13 @@
 >X_HOME_DIR -1				# Direction of endstops when homing; 1=MAX, -1=MIN :[-1,1]
 >Y_HOME_DIR -1				# Direction of endstops when homing; 1=MAX, -1=MIN :[-1,1]
 >Z_HOME_DIR -1				# Direction of endstops when homing; 1=MAX, -1=MIN :[-1,1]
->HOMING_FEEDRATE_XY 2400                # Homing X Y speeds (mm/m)
->HOMING_FEEDRATE_Z  600                 # Homing Z speeds (mm/m)
+>HOMING_FEEDRATE_XY 5000                # Homing X Y speeds (mm/m)
+>HOMING_FEEDRATE_Z  1000                 # Homing Z speeds (mm/m)
 >HOME_Y_BEFORE_X	0       	# When G28 is called,0: X home before Y; 1: Y home before X
 
 
 #============================= Z Probe Options =============================
-#BLTOUCH			1	# 0:disable BLTOUCH; 1:enable BLTOUCH
+>BLTOUCH			1	# 0:disable BLTOUCH; 1:enable BLTOUCH
 #Select for a probe connected to Z-Min or Z-Max.
 >Z_MIN_PROBE_PIN_MODE		1	# 0 : NULL; 1: ZMIN; 2: ZMAX
 
@@ -255,8 +255,8 @@
 >X_PROBE_OFFSET_FROM_EXTRUDER	-48	# X offset: -left  +right  [of the nozzle]
 >Y_PROBE_OFFSET_FROM_EXTRUDER	-8	# Y offset: -front +behind [the nozzle]
 >XY_PROBE_SPEED 		4000	# X and Y axis travel speed (mm/m) between probes
->Z_PROBE_SPEED_FAST 		600	# Speed for the first approach when double-probing (with PROBE_DOUBLE_TOUCH)
->Z_PROBE_SPEED_SLOW 		300	# Speed for the "accurate" probe of each point
+>Z_PROBE_SPEED_FAST 		800	# Speed for the first approach when double-probing (with PROBE_DOUBLE_TOUCH)
+>Z_PROBE_SPEED_SLOW 		500	# Speed for the "accurate" probe of each point
 
 >Z_SAFE_HOMING			1	# 0:Disable£¬1£ºEnable
 
@@ -278,7 +278,7 @@
 >MESH_INSET			20	# Mesh inset margin on print area for MESH_BED_LEVELING
 #============================= Z_PROBE settings =============================
 
->BLTOUCH			1	# 0:Disable BLTOUCH; 1:Enable BLTOUCH
+#>BLTOUCH			1	# 0:Disable BLTOUCH; 1:Enable BLTOUCH
 
 #============================== Delta Settings =============================
 >DELTA_SEGMENTS_PER_SECOND	40      #--default

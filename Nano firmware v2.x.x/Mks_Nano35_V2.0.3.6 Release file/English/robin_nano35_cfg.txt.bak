@@ -3,7 +3,7 @@
 
 >cfg_have_ups_device			0			# UPS(1:yes;0:no)
 
->cfg_print_over_auto_close		1			# auto-off when print finishes(1:yes£»0:no)
+>cfg_print_over_auto_close		0			# auto-off when print finishes(1:yes£»0:no)
 
 >PRINT_FINISHED_COUNT 			180			#After the shutdown delay time (unit: second)
 
@@ -278,7 +278,7 @@
 >MESH_INSET			20	# Mesh inset margin on print area for MESH_BED_LEVELING
 #============================= Z_PROBE settings =============================
 
->BLTOUCH			1	# 0:Disable BLTOUCH; 1:Enable BLTOUCH
+#>BLTOUCH			1	# 0:Disable BLTOUCH; 1:Enable BLTOUCH
 
 #============================== Delta Settings =============================
 >DELTA_SEGMENTS_PER_SECOND	40      #--default
